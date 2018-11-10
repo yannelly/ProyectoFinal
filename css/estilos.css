@@ -1,0 +1,154 @@
+body{
+  background-color: #02010a;
+  font-family: "Dancing Script";
+  -webkit-animation-name: slidein;
+  -webkit-animation-duration:1s;
+  animation-name:slidein;
+  animation-duration:1s;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+  min-height: 100px;
+  background-color:  #5b7989;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-flow: row wrap;
+}
+#titulo{
+  width: 50%;
+  padding-left: 30px;
+}
+#menu{
+  width: 47%;
+}
+#menu a{
+  font-size: 25px;
+  color: white;
+  padding-top: 30px;
+  padding-right: 30px;
+  float: right;
+}
+#inicio{
+  text-decoration: none;
+}
+.contenedor{
+  box-shadow: 2px #02010a;
+  text-align: center;
+  background-color: #82c3a6;
+  padding: 15px;
+}
+.contenedor img{
+  box-shadow: 2px 2px #02010a;
+}
+.secundarias{
+  display: flex;
+  justify-content: center;
+  background-color: #d5c75f;
+  text-align: center;
+}
+.secundarias p img{
+  margin: 10px;
+  border: 1px solid #02010a;
+  box-shadow: 2px 2px #02010a;
+}
+.secundarias p a{
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+#animal{
+  transition-duration: 1s;
+}
+#animal:hover {
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+  border: 2px solid #82c3a6;
+}
+#dog{
+  transition-duration: 1s;
+}
+#dog:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+  border: 2px solid #82c3a6;
+}
+footer{
+  background-color:  #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+.pie{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-left: 50px;
+}
+.informacion{
+  font-size: 30px;
+  width: 25%;
+  box-sizing: border-box;
+}
+footer p{
+  font-size: 20px;
+}
+
+@media (max-width:900px){
+  header{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #titulo{
+    width: 100%;
+    text-align: center;
+  }
+  #menu{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .contenedor #beach{
+    width: 100%;
+  }
+  .secundarias{
+    display: flex;
+    flex-direction: column;
+  }
+  img #animal{
+    width: 100%;
+  }
+  img #dog{
+    width: 100%;
+  }
+  footer .informacion{
+    text-align: left;
+    margin-left: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@-webkit-keyframes slidein{
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+@keyframes slidein{
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
